@@ -1,0 +1,20 @@
+#loading-screen {
+  position: fixed;
+  inset: 0;
+  background-color: #000;
+  z-index: 9999;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#loading-screen img {
+  width: 40vw;
+  max-width: 220px;
+  min-width: 120px;
+  height: auto;
+
+  opacity: 0.9;
+  animation: pulse 1.8s ease-in-out infinite;
+}
