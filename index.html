@@ -1,3 +1,19 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>의장대 군가</title>
+
+  <!-- 군가 디자인 -->
+  <link rel="stylesheet" href="song.css">
+
+  <!-- 인트로 디자인 -->
+  <link rel="stylesheet" href="loading.css">
+</head>
+
 <body>
 
   <!-- 인트로 로딩 화면 -->
@@ -7,34 +23,91 @@
 
   <!-- 군가 화면 -->
   <div class="container">
+
     <h1>의장대군가(참고용)</h1>
 
     <div class="song-tabs">
-      <button class="tab active" data-song="song1">의장대가</button>
-      <button class="tab" data-song="song2">계룡산 호랑이</button>
-      <button class="tab" data-song="song3">군조가</button>
+
+      <button class="tab active" data-song="song1">
+        의장대가
+      </button>
+
+      <button class="tab" data-song="song2">
+        계룡산 호랑이
+      </button>
+
+      <button class="tab" data-song="song3">
+        군조가
+      </button>
+
     </div>
 
+    <!-- 음악 플레이어 -->
     <audio id="player" controls></audio>
 
+    <!-- 가사 -->
     <div class="lyrics">
 
       <div class="song active" id="song1">
-        <!-- 기존 song.html의 가사 그대로 -->
+
+        <p data-time="0">찬란한 전통과 빛을 이-을(헤이)</p>
+        <p data-time="5">나는대한 건-아</p>
+        <p data-time="8">충-무화랑 넋을 이을 의장대 용사</p>
+        <p data-time="16">자-유평-화 수호할 명예의 기사</p>
+        <p data-time="23">오-늘도 명예속에 살-아나간다</p>
+        <p data-time="30">나-는대-한 아나갓 자-랑스-런 아나갓</p>
+        <p data-time="37">영 원히 빛낼- 의 장 대</p>
+        <p data-time="45">랄라라 랄라라 랄랄 라라(헤이)</p>
+        <p data-time="49">라라라라 라 라</p>
+        <p data-time="52">라-라라라 랄랄라라 랄랄라라라</p>
+        <p data-time="59">나-는대-한 아나갓 자-랑스-런 아나갓</p>
+        <p data-time="65">영 원히 빛낼- 의 장 대</p>
+
       </div>
+
 
       <div class="song" id="song2">
-        <!-- 기존 song.html의 가사 그대로 -->
+
+        <p data-time="0">계룡산 정기뻗어 여기에 맺히고</p>
+        <p data-time="8">백-두화랑 정통받은 대한육군 의장대</p>
+        <p data-time="15">작-렬하는 태양속에 빛나는 호랑이마크</p>
+        <p data-time="23">반-짝이는 행사모에 모든걸 걸었다</p>
+        <p data-time="30">(야성) 야성 (패기) 패기</p>
+        <p data-time="34">(헤이) 펄펄끓는 눈동자</p>
+        <p data-time="37">행사에 목숨걸고 명예에 죽고사는</p>
+        <p data-time="41">육 (군) 의 (장) 대</p>
+        <p data-time="45">의식은 전투처럼 훈련은 실전같이</p>
+        <p data-time="49">육 (육) 군 (군) 의 (의) 장 (장) 대 (대)</p>
+        <p data-time="52">의장대</p>
+
       </div>
 
+
       <div class="song" id="song3">
-        <!-- 기존 song.html의 가사 그대로 -->
+
+        <p data-time="0">반짝이는 백철모-에 / 명예를 걸고요</p>
+        <p data-time="7">(붐빠붐빠 붐빠붐빠) 행진 속에 / 청춘은 갑니다</p>
+        <p data-time="15">처-녀 열아홉살 / 아름다운 꿈 속에는</p>
+        <p data-time="21">(라이라이라이라이 차-차차)</p>
+        <p data-time="26">(라이라이라이라이 차-차차)</p>
+        <p data-time="29">돌아가는 엠모 원-에 / 멋쟁이 용사들</p>
+        <p data-time="37">당신만이 그리워-서 / 생각을 합니다</p>
+        <p data-time="44">오 늘은 어딜가서 행 사를 하고</p>
+        <p data-time="48">내 일은 어딜가서 파 티를 하나</p>
+        <p data-time="52">우리들은 서이너이 아 나 갓 아나갓 의장대 용사들 신사들 사자들 호랑이</p>
+        <p data-time="60">멋지구나 부기</p>
+        <p data-time="62">노래하며 춤을추자 립빠빠 립빠 립빠</p>
+
       </div>
 
     </div>
+
   </div>
 
+
+  <!-- 기능 -->
   <script src="loading.js"></script>
   <script src="song.js"></script>
 
 </body>
+</html>
